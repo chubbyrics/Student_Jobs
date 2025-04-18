@@ -1,0 +1,159 @@
+.apply-form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #1e53af, #153e75); /* Subtle gradient for depth */
+}
+
+.apply-form-container {
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.apply-form-container:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.apply-form-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #222;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.job-details {
+    text-align: right;
+    font-size: 14px;
+    color: #666;
+}
+
+.apply-form-container label {
+    color: #222; /* Strong contrast for readability */
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+}
+
+/* Improved Inputs & Textareas */
+.apply-form-container input,
+.apply-form-container textarea,
+.apply-form-container select {
+    width: 100%;
+    padding: 14px;
+    margin: 8px 0;
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: #f7f9fc;
+    color: #222;
+    transition: all 0.3s ease;
+}
+
+.apply-form-container input::placeholder,
+.apply-form-container textarea::placeholder {
+    color: #888;
+}
+
+/* Focus Effects */
+.apply-form-container input:focus,
+.apply-form-container textarea:focus,
+.apply-form-container select:focus {
+    border-color: #0056b3;
+    background: #ffffff;
+    color: #222;
+    outline: none;
+    box-shadow: 0 0 6px rgba(0, 86, 179, 0.2);
+}
+
+/* Textarea Improvements */
+.apply-form-container textarea {
+    resize: vertical;
+    min-height: 160px;
+    margin: 6px 0;
+    border-radius: 10px;
+}
+
+/* Stylish Submit Button */
+.apply-form-container button {
+    width: 100%;
+    padding: 16px;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+.apply-form-container button:hover {
+    background: linear-gradient(135deg, #0056b3, #003f8f);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0, 91, 187, 0.25);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .apply-form-container {
+        width: 95%;
+        padding: 22px;
+    }
+
+    .apply-form-container input,
+    .apply-form-container textarea,
+    .apply-form-container select {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .apply-form-container button {
+        font-size: 15px;
+        padding: 14px;
+    }
+}
+
+/* Error Message Styling */
+.error-message {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    text-align: center;
+}
+
+/* File Info Styling */
+.file-info {
+    display: block;
+    color: #64748b;
+    font-size: 12px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+/* Disabled Button State */
+.apply-form-container button:disabled {
+    background: #94a3b8;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+    opacity: 0.7;
+}

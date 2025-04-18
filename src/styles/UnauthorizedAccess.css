@@ -1,0 +1,126 @@
+.unauthorized-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.dark-mode .unauthorized-container {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+.unauthorized-content {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+.dark-mode .unauthorized-content {
+  background-color: #2d2d2d;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.lock-icon {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.unauthorized-content h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #d9534f;
+}
+
+.dark-mode .unauthorized-content h2 {
+  color: #ff6b6b;
+}
+
+.unauthorized-content p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.dark-mode .unauthorized-content p {
+  color: #b0b0b0;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.home-button,
+.login-button {
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.home-button {
+  background-color: #f8f9fa;
+  color: #495057;
+  border: 1px solid #ced4da;
+}
+
+.home-button:hover {
+  background-color: #e9ecef;
+}
+
+.login-button {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+}
+
+.login-button:hover {
+  background-color: #0069d9;
+}
+
+.dark-mode .home-button {
+  background-color: #343a40;
+  color: #e9ecef;
+  border: 1px solid #495057;
+}
+
+.dark-mode .home-button:hover {
+  background-color: #495057;
+}
+
+.dark-mode .login-button {
+  background-color: #0069d9;
+  border: 1px solid #0062cc;
+}
+
+.dark-mode .login-button:hover {
+  background-color: #0062cc;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .unauthorized-content {
+    padding: 30px 20px;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .home-button,
+  .login-button {
+    width: 100%;
+  }
+} 

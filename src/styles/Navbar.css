@@ -1,0 +1,252 @@
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 20px;
+  height: 60px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+
+/* Light & Dark Mode */
+.navbar.light {
+  background: rgba(65, 105, 170, 0.95);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.navbar.dark {
+  background: rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+/* Navbar Container */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+/* Logo */
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 15px;
+  color: white;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Navigation List */
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+  margin-left: auto; /* Pushes the nav items to the right */
+}
+
+/* Navigation Links */
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Active Link Indicator */
+.nav-link.active {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+
+/* Hover Effect */
+.nav-link:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Profile Nav Picture */
+.profile-nav-container {
+  margin: 0 15px;
+}
+
+.profile-nav-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.profile-nav-picture:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+.profile-nav-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-nav-avatar {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Dark Mode Toggle Button */
+.toggle-button {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.toggle-button:hover {
+  transform: scale(1.1);
+}
+
+/* Hamburger Menu (Mobile) */
+.hamburger-menu {
+  font-size: 25px;
+  display: none;
+  cursor: pointer;
+  margin-left: auto; /* Push to the right edge */
+  margin-right: 15px; /* Add some right margin */
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .navbar {
+    padding: 0 10px; /* Reduce padding on mobile */
+  }
+
+  .logo {
+    flex: 1; /* Allow logo to take available space */
+    text-align: left; /* Ensure text is left aligned */
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between; /* Ensure proper spacing */
+    width: 100%;
+  }
+  
+  .hamburger-menu {
+    display: block;
+    order: 2; /* Ensure it appears after the logo */
+    margin-left: auto; /* Push to the right */
+    position: relative; /* Enable positioning context */
+    right: 0; /* Align to the right edge */
+  }
+  
+  .nav-list {
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    width: 250px;
+    height: calc(100vh - 60px);
+    background-color: rgba(65, 105, 170, 0.95);
+    flex-direction: column;
+    align-items: flex-start;
+    transition: 0.3s ease-in-out;
+    padding: 20px 0;
+    overflow-y: auto;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 999;
+    margin-left: 0; /* Reset margin on mobile */
+  }
+  
+  .dark-mode .nav-list {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .nav-list.active {
+    left: 0;
+  }
+  
+  .nav-list li {
+    width: 100%;
+  }
+  
+  .nav-link {
+    display: block;
+    width: 100%;
+    padding: 15px 25px;
+    border-radius: 0;
+  }
+  
+  .nav-link.active::after {
+    display: none;
+  }
+  
+  .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* Desktop only and Mobile only classes */
+.desktop-only {
+  display: flex;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+  
+  .mobile-only {
+    display: block;
+  }
+}

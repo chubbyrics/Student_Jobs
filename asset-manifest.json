@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.30a505e3.css",
+    "main.js": "/static/js/main.23f44594.js",
+    "static/js/453.47eec4c6.chunk.js": "/static/js/453.47eec4c6.chunk.js",
+    "static/media/homepic-removebg-preview.png": "/static/media/homepic-removebg-preview.c6a7911f01022ce69923.png",
+    "static/media/joanna.jpg": "/static/media/joanna.e8d097bc7715c2bcf177.jpg",
+    "static/media/SJ_mascot.png": "/static/media/SJ_mascot.fe9d2aaf36b1fa3753e0.png",
+    "static/media/alyssa.png": "/static/media/alyssa.29e7bdb6cf445e6db430.png",
+    "static/media/linked-in.png": "/static/media/linked-in.d1f1413031dc2a38b627.png",
+    "static/media/kaili.jpg": "/static/media/kaili.6520f9147909f8bac2b0.jpg",
+    "static/media/rics.jpg": "/static/media/rics.e67b87bde800cd126417.jpg",
+    "static/media/james.jpg": "/static/media/james.d3499c12abd20016e9d6.jpg",
+    "static/media/send-icon.png": "/static/media/send-icon.bb3e3c9f9a630b7e0a32.png",
+    "static/media/facebook.png": "/static/media/facebook.7db2293c2c9018fce95b.png",
+    "static/media/profile-icon.png": "/static/media/profile-icon.2808ed37edf5bb55cc28.png",
+    "static/media/check-icon.png": "/static/media/check-icon.6aadfae4e7f28036b068.png",
+    "static/media/employer-icon.png": "/static/media/employer-icon.43434bd8b2c5bb924b3d.png",
+    "static/media/search-icon.png": "/static/media/search-icon.a788b3d6fa3fc1348812.png",
+    "static/media/add.png": "/static/media/add.1e35f7f94c75f4e17eb7.png",
+    "index.html": "/index.html",
+    "main.30a505e3.css.map": "/static/css/main.30a505e3.css.map",
+    "main.23f44594.js.map": "/static/js/main.23f44594.js.map",
+    "453.47eec4c6.chunk.js.map": "/static/js/453.47eec4c6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.30a505e3.css",
+    "static/js/main.23f44594.js"
+  ]
+}
